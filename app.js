@@ -16,8 +16,14 @@ app.use(express.json());
 const studentroute = require('./routes/studentroute');
 app.use('/api/v1', studentroute);
 
-// server
-const port = process.env.PORT || process.env.port || 3000;
+// root test route (optional)
+app.get('/', (req, res) => {
+    res.send("Student API is running successfully");
+});
+
+// IMPORTANT FOR RENDER
+const port = process.env.PORT || 3000;
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
