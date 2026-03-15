@@ -1,0 +1,21 @@
+{
+  "name": "studentapi",
+  "version": "1.0.0",
+  "description": "Student CRUD API",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.3.0",
+    "nodemon": "^3.1.4"
+  }
+}
